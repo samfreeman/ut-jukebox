@@ -1,0 +1,3 @@
+
+1. Figure out how to display background image
+2. Make song-request pageProps
