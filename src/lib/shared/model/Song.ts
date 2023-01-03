@@ -44,5 +44,11 @@ export const data: Song[] = [
 	song('Come Out And Play', 'The Offspring', 'je'),
 	song('Control', 'Puddle of Mud', 'bd'),
 	song('Crackerman', 'Stone Temple Pilots', 'be'),
-	song('Crazy Bitch', 'Buckcherry', 'je')
+	song('Crazy Bitch', 'Buckcherry', 'je'),
+
+	song('Cumbersome', 'Seven Mary Three', 'be'),
+	song('Dead And Bloated', 'Stone Temple Pilots', 'be'),
+	song('Down In A Hole', 'Alice In Chains', 'be'),
+	song('Down With The Sickness', 'Disturbed', 'jd'),
+	song('Everlong', 'Foo Fighters', 'bd')
 ]
