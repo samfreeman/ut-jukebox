@@ -7,11 +7,13 @@ export const Test = () => {
 	const color = message.includes('not')
 		? 'text-red-400'
 		: 'text-green-400'
+
 	return (
 		<div className={`m-4 text-lg ${color}`}>
 			{message}
 		</div>
 	)
 }
+
 
 export default Test
