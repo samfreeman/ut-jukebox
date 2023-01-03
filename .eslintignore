@@ -2,3 +2,4 @@ node_modules
 build
 tests
 jest.config.ts
+tailwind.config.js
