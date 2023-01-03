@@ -1,6 +1,6 @@
 
-const Test = () => {
-	const message = new class { x }().hasOwnProperty('x') ?
+export const Test = () => {
+	const message = new class { x: any }().hasOwnProperty('x') ?
 		'Transpiler is configured correctly'
 		: 'Transpiler is not configured correctly'
 

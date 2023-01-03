@@ -1,5 +1,8 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "overrides": [],
   "rules": {
       "indent": [
           "error",
@@ -16,11 +19,6 @@
       "semi": [
           "error",
           "never"
-      ],
-      "@typescript-eslint/no-unused-vars": "error",
-      "@typescript-eslint/consistent-type-definitions": [
-          "error",
-          "interface"
       ]
   }
 }

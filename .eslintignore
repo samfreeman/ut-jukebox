@@ -3,3 +3,4 @@ build
 tests
 jest.config.ts
 tailwind.config.js
+postcss.config.js
