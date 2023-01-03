@@ -12,11 +12,19 @@ export type Props = DivProps<{
 export const Song = ({ song }: Props) => {
 	const Title = ({ song }: Props) => {
 		const Name = ({ song }: Props) => (
-			<p className='text-lg'>{song.name}</p>
+			<p
+				className={
+					'max-w-[172px] max-h-[32px] '
+					+ 'font-bold text-amber-700 '
+					+ 'whitespace-nowrap overflow-hidden overflow-ellipsis'
+				}
+			>
+				{song.name}
+			</p>
 		)
 
 		const Artist = ({ song }: Props) => (
-			<p className='text-sm'>{song.artist}</p>
+			<p className='text-xs'>{song.artist}</p>
 		)
 
 		return (
@@ -33,7 +41,7 @@ export const Song = ({ song }: Props) => {
 		)
 
 		const Tuning = ({ song }: Props) => (
-			<p>{song.tuning}</p>
+			<p className='text-orange-400'>{song.tuning}</p>
 		)
 
 		return (
@@ -45,7 +53,16 @@ export const Song = ({ song }: Props) => {
 	}
 
 	return (
-		<div className='flex flex-row justify-between px-2 py-1 border-2 border-solid rounded-md bg-stone-900 w-80 border-slate-400'>
+		<div
+			className={
+				'flex flex-row justify-between '
+				+ 'w-64 px-2 py-1 '
+				+ 'border-2 border-solid rounded-md '
+				+ 'cursor-pointer '
+				+ 'bg-stone-900 border-slate-400'
+			}
+			title={`${song.name} - ${song.artist} - ${song.singer} - ${song.tuning}`}
+		>
 			<Title song={song} />
 			<Detail song={song} />
 		</div>
