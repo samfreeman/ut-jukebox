@@ -6,7 +6,11 @@ module.exports = {
 		"./src/pages/**/*.{js,ts,jsx,tsx}"
 	],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				"body": ["Rubik", "sans-serif"]
+			}
+		}
 	},
 	plugins: []
 }
